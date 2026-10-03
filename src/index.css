@@ -1,0 +1,53 @@
+/* متغيرات الألوان الأساسية للمشروع */
+:root {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --card-border: #2a2a2a;
+  --accent-orange: #ff9f1c;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* لتحديد حجم الشاشةة */
+#root {
+  width: 100%;
+  max-width: 430px;
+  background-color: #181818;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}/* إتاحة التمرير في التطبيق */
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-y: auto; /* يسمح بالتمرير العمودي */
+}
+
+/* في حال وجود حاوية محددة العرض كشاشة الموبايل */
+.app-container {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 100px; /* مسافة أمان لكي لا يغطي BottomNav على الأقسام السفلية */
+  position: relative;
+}

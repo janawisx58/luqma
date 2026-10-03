@@ -1,0 +1,165 @@
+.calorie-card {
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  width: 100%;
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.progress-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+/* دائرة تقدم حقيقية بالـ Conic Gradient */
+.progress-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.circle-inner {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calories-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.calories-unit {
+  font-size: 11px;
+  color: #888888;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #888888;
+}
+
+.stat-item.clickable {
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: rgba(255, 159, 28, 0.1);
+}
+
+.stat-item.clickable:hover {
+  background-color: rgba(255, 159, 28, 0.2);
+}
+
+/* تنسيقات النافذة المنبثقة (Modal) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 20px;
+  width: 85%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.modal-box h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #121212;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #333;
+  color: #aaa;
+}
+
+.btn-save {
+  background: #ff9f1c;
+  color: #121212;
+}

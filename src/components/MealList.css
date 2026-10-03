@@ -1,0 +1,302 @@
+.meal-list-section {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 110px; /* مسافة للتمرير */
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.meal-category {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.cat-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-total {
+  font-size: 12px;
+  color: #888888;
+}
+
+/* تنسيق زر الـ + البرتقالي الفخم */
+.add-meal-btn {
+  background-color: #ff9f1c !important;
+  color: #121212 !important;
+  border: none !important;
+  outline: none !important;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(255, 159, 28, 0.3);
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.add-meal-btn:hover {
+  background-color: #ffa834 !important;
+  transform: scale(1.08);
+}
+
+.add-meal-btn:active {
+  transform: scale(0.95);
+}
+
+/* تنسيقات البطاقات */
+.meal-card {
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-info-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.meal-img-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.meal-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.meal-time {
+  font-size: 10px;
+  color: #777;
+  margin-left: 6px;
+}
+
+.meal-macros {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: #a0a0a0;
+}
+
+.macro-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.dot-protein { background-color: #ff4d4d; }
+.dot-carbs { background-color: #ff9f1c; }
+.dot-fat { background-color: #4da6ff; }
+
+.meal-calories {
+  text-align: right;
+}
+
+.cal-num {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.cal-unit {
+  font-size: 10px;
+  color: #888;
+  display: block;
+}
+
+.empty-category-card {
+  background-color: #181818;
+  border: 1px dashed #2a2a2a;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.empty-category-card:hover {
+  border-color: #3a3a3a;
+  color: #888;
+}
+.macro-inputs {
+  display: flex;
+  gap: 6px;
+}
+
+.macro-inputs input {
+  flex: 1;
+  padding: 8px;
+  font-size: 12px;
+}
+/* تنسيق قسم الأزرار بجانب السعرات */
+.meal-right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meal-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+/* تنسيق زر الحذف والتعديل */
+.action-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+  opacity: 0.75;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.edit-btn:hover {
+  background-color: rgba(255, 193, 7, 0.15);
+}
+
+.delete-btn:hover {
+  background-color: rgba(244, 67, 54, 0.15);
+}
+/* AI Smart Logger Card - Dark Theme Integrated */
+.ai-smart-card {
+  background: #0000007e;
+  border: 1px solid #3d382d;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ai-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.ai-badge {
+  background: rgba(125, 84, 8, 0.15);
+  color: #72460b;
+  border: 1px solid rgba(185, 151, 16, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.ai-card-header h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #f3f4f6;
+  font-weight: 600;
+}
+
+.ai-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-input-form textarea {
+  width: 100%;
+  background: #313131;
+  border: 1px solid #b18a31;
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.ai-input-form textarea:focus {
+  border-color: #a57d0e;
+  box-shadow: 0 0 0 2px rgba(139, 101, 6, 0.15);
+}
+
+.ai-submit-btn {
+  width: 100%;
+  background: #957106;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.ai-submit-btn:hover {
+  background: #aea598;
+  color: #000000;
+}
+
+.ai-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
